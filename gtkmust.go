@@ -13,6 +13,22 @@ func AboutDialogNew() *gtk.AboutDialog {
 	return res
 }
 
+func ApplicationNew(appId string, flags glib.ApplicationFlags) *gtk.Application {
+	res, err := gtk.ApplicationNew(appId, flags)
+	if err != nil {
+		panic(err)
+	}
+	return res
+}
+
+func ApplicationWindowNew(app *gtk.Application) *gtk.ApplicationWindow {
+	res, err := gtk.ApplicationWindowNew(app)
+	if err != nil {
+		panic(err)
+	}
+	return res
+}
+
 func BoxNew(o gtk.Orientation, spacing int) *gtk.Box {
 	res, err := gtk.BoxNew(o, spacing)
 	if err != nil {
