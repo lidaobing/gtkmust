@@ -97,6 +97,14 @@ func ImageNew() *gtk.Image {
 	return res
 }
 
+func LabelNew(label string) *gtk.Label {
+	res, err := gtk.LabelNew(label)
+	if err != nil {
+		panic(err)
+	}
+	return res
+}
+
 func ListStoreNew(types ...glib.Type) *gtk.ListStore {
 	res, err := gtk.ListStoreNew(types...)
 	if err != nil {
