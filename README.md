@@ -1,5 +1,7 @@
 # GTKMust - a wrapper on github.com/gotk3/gotk3
 
+[![GoDoc](https://godoc.org/github.com/lidaobing/gtkmust?status.svg)](https://godoc.org/github.com/lidaobing/gtkmust)
+
 I knew that I don't know how to deal with error returned by gotk3, so just panic.
 
 ## Sample Usage
